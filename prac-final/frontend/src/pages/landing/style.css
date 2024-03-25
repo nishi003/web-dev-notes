@@ -1,0 +1,76 @@
+#forum {
+    border-collapse: collapse;
+}
+
+#forum th {
+    text-align: left;
+    font-size: 0.8rem;
+    color: #666;
+    padding: 0.5rem;
+}
+
+#forum th, #forum td {
+    border-bottom: 1px #ccc solid;
+    padding: 0.5rem;
+}
+
+#forum tbody td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#forum tbody tr:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#forum tbody .topic {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*
+ * TODO: Fix the CSS so that:
+ *    1. list items should be placed horizontally 
+ *    2. First and last items should have 0.4rem round edges 
+ *        - ONLY on the outer edges, see handout for example.
+ *    3. On hover, cursor style should be changed to "pointer"
+ *    4. The active page (with class="active") should not change style(s)
+ *       on hover. It should also have white text with background
+ *       color that is the same as the border.
+ */
+
+.pagination {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.pagination > :first-child {
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.pagination > :last-child {
+    border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.pagination > .active {
+    color: white;
+    background-color: thistle;
+}
+
+.pagination > .active:hover {
+    background-color: thistle;
+}
+
+.pagination > li {
+    padding: 0.6rem 0.8rem;
+    border: 1px thistle solid;
+}
+
+.pagination li:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+label, p {
+    padding: 0 0.2em;
+    text-align: left;
+}
+
+input {
+    margin-left: 0.5em;
+    padding: 2px 0.2em;
+}
+
+button {
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+}

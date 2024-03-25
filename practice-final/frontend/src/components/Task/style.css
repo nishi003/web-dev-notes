@@ -1,0 +1,51 @@
+/*
+ * TODO: 
+ * 1. Fix the CSS so that the due date of the task is displayed 8px to the
+ *    right of the summary, and vertically centered.
+ * 2. Fix the problem where title and due date are not on the same line. 
+ */
+
+details {
+    border: 1px solid blanchedalmond;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+details summary {
+    cursor: pointer;
+    background-color: blanchedalmond;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+details[open] summary {  
+    border-radius: 7px 7px 0 0;
+}
+
+details p {
+    padding: 8px 0;
+}
+
+details > div {
+    margin: 8px 1.5em;
+}
+
+.expired {
+    border-color: crimson;
+}
+
+.expired summary {
+    background-color: crimson;
+}
+
+.completed {
+    border-color: dodgerblue;
+}
+
+.completed summary {
+    background-color: dodgerblue;
+}
+
+.completed p {
+    text-decoration: line-through;
+}

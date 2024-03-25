@@ -1,0 +1,32 @@
+.topic-title {
+    color: #333;
+}
+
+#my-topic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0.5rem;
+}
+
+#my-topic span {
+    color: #666;
+}
+
+#my-topic .username {
+    color: darkblue;
+}
+
+#my-topic .date-time {
+    text-align: right;
+}
+
+#my-topic div {
+    grid-column: 1 / 3;
+    padding: 1.5rem 0;
+    border-bottom: 1px #ccc solid;
+    margin-bottom: 1rem;
+}
+
+#my-topic p {
+    grid-column: 1 / 3;
+}

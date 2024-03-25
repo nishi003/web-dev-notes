@@ -1,0 +1,56 @@
+<script src="https://code.jquery.com/jquery-3.6.3.js">
+$.ajax("/user/", {
+    method : 'PATCH',
+    data : {
+        username : $('#username-input').val(),
+    },
+    headers : {
+        'X-CSRFToken' : $('input[name=csrfmiddlewaretoken]').val(),
+    },
+    success : function() {
+        $('.show-modal').hide();
+    },
+    error : function(xhr) {
+        if (xhr.status === 400) {
+            var resp = xhr.responseJSON;
+            if (resp['username']) {
+                var message = resp['username'][0];
+                $error.html(message).show();
+            }
+        }
+    }
+});
+
+var jqxhr = $.ajax("example.php")
+  .done(function(data) {
+    alert("success: " + data);
+  })
+  .fail(function() {
+    alert("error");
+  });
+
+setTimeout(function() {
+  console.log("Delayed for 1 second.");
+}, 1000);
+
+localStorage.setItem('access_token', access_token);
+localStorage.getItem('access_token');
+
+function outer() {
+    var b = 10;
+    var c = 100;
+
+    function inner() {
+        var a = 20;
+        console.log("a = " + a + ", b = " + b);
+        a++;
+        b++;
+    }
+
+    return inner;
+}
+
+var X = outer(); var Y = outer();
+
+
+</script>

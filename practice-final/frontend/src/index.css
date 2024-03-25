@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-family: Arial;
+}
+
+.btn {
+  background-color: #9dc88d;
+  border: 1px solid #0f1c1e;
+  color: #0f1c1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.2s;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.btn:hover {
+  background: #daa520;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+form .offset-1 {
+  grid-column: 2 / 3;
+}
+
+form .error {
+  grid-column: 2 / 3;
+}

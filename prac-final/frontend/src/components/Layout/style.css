@@ -1,0 +1,42 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #0f1c1e;
+    padding: 1em 1.5em;
+}
+
+header p {
+  color: #aaa;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em 1.5em;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em 1.5em;
+}
+
+.link {
+    color: #d4d4d4;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    font-size: 1em;
+}
+
+.link:hover {
+    color: #9dc88d;
+}
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}

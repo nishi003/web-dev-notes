@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="signup.js"></script>
+</head>
+<body>
+  <form class="container" onsubmit="return false" method="POST"> 
+  <div>
+    <h2>Please enter your information</h2>
+  </div>
+      
+  <label for="input-username"> Username </label>
+  <input id="input-username" type="text" name="username" >
+  <p id="error-username"></p>
+
+  <label for="input-email"> Email </label>
+  <input id="input-email" type="email" name="email" >
+  <p id="error-email"></p>
+
+  <label for="input-password"> Password </label>
+  <input id="input-password" type="password" name="password" >
+  <p id="error-password"></p>
+
+  <label for="input-repeat-password"> Repeat password </label>
+  <input id="input-repeat-password" type="password" name="password2" >
+  <p id="error-repeat-password"></p>
+
+  <label for="input-challenge"> What's 8 + 16/4? </label>
+  <input id="input-challenge" type="number" name="challenge" >
+  <p id="error-challenge"></p>
+
+  <button id="submit-form" type="submit">Sign me up!</button>
+  <p id="error-form"></p>
+
+  </form>
+</body>
+</html>

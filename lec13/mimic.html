@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<script type="text/babel">
+  class Mimic extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { message: "Hello" };
+    }
+
+    render() {
+        return <>
+            <h1>{this.state.message}</h1>
+            <input 
+            type="text" 
+            onChange={event => this.setState({message: event.target.value})} />
+        </>;
+    }
+  }
+
+  const root = ReactDOM.createRoot(document.body);
+  root.render(<Mimic />);
+</script>
+</body>
+</html>
